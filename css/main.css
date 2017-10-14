@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: 400;
+  background: #222;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #71D6B0;
+}
+
+
+/* putting all the stuff inside the container back */
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  float: left;
+  margin: 5px;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  border: 1px solid #444;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #444;
+}
+
+
+/* all the header hover effects */
+
+h1:hover {
+  color: white;
+  border: 1px solid white;
+  transition: all ease-in-out 250ms;
+}
+
+h1 a:hover {
+  color: white;
+  transition: all ease-in-out 590ms;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+  position: relative;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+
+
+/* navigation hover effects */
+
+nav a:hover {
+  color: white;
+  transition: all ease-in-out 250ms;
+}
+
+
+/* cool animating line and its slide in animation */
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  width: 0%;
+  top: 50px;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
