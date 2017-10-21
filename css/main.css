@@ -1,100 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Baumans|Parisienne');
+
+/* font-family: 'Aldrich', sans-serif;
+font-family: 'Baumans', cursive;
+font-family: 'Parisienne', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: 'Encode Sans Expanded', sans-serif;
-  font-weight: 400;
-  background: #222;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #FFFD82;
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 header {
-  background: #71D6B0;
+    padding-top: 2em;
 }
 
-
-/* putting all the stuff inside the container back */
-
-header::after {
-  content: "";
-  display: table;
-  clear: both;
+.logo h1 a {
+    text-decoration: none;
+    color: #5A7D7C
 }
 
-h1 {
-  float: left;
-  margin: 5px;
-  padding: 5px 30px;
-  text-transform: uppercase;
-  border: 1px solid #444;
+.logo h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+    float: left;
+    
+    transition: ease-in-out 400ms;
 }
 
-h1 a {
-  text-decoration: none;
-  color: #444;
+.logo h1:hover {
+    text-shadow: none;
+    text-shadow: 6px 4px 5px rgba(0, 0, 0, 0.164);
 }
 
-
-/* all the header hover effects */
-
-h1:hover {
-  color: white;
-  border: 1px solid white;
-  transition: all ease-in-out 250ms;
-}
-
-h1 a:hover {
-  color: white;
-  transition: all ease-in-out 590ms;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 20px;
-  position: relative;
-}
 
 nav a {
-  text-transform: uppercase;
-  color: #333333;
-  text-decoration: none;
+    font-family: 'Aldrich', sans-serif;
+    text-decoration: none;
+    color: #5A7D7C;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: .3em 1em .2em 1em;
+    border: 3px solid #724A5D;
+    border-radius: .5em;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out 400ms;
+    margin-left: 1em;
+    float: right;
 }
-
-
-/* navigation hover effects */
 
 nav a:hover {
-  color: white;
-  transition: all ease-in-out 250ms;
+    box-shadow: none;
 }
 
 
-/* cool animating line and its slide in animation */
 
-nav a::before {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: white;
-  position: absolute;
-  width: 0%;
-  top: 50px;
-  transition: all ease-in-out 250ms;
+section.left {
+    position: relative;
+    clear: both;
+    width: 48%;
+    height: 30em;
+    margin-top: 2em;
+    border: 3px solid #724A5D;
+    padding: 0;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out 400ms;
+
+    float: left;
 }
 
-nav a:hover::before {
-  width: 100%;
+section.left:hover {
+    box-shadow: none;
+}
+
+section img {
+    width: 60%;
+    height: auto;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-family: 'Baumans', cursive;
+    font-weight: 200;
+    font-size: 1.4em;
+    margin: 0;
+    padding: .2em 0;
+    text-align: center;
+}
+
+section.right {
+    position: relative;
+    width: 48%;
+    height: 30em;
+    margin: 0;
+    margin-top: 2em;
+    background-color: #724A5D;
+    border: 3px solid #724A5D;
+    padding: 0;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out 400ms;
+    float: right;
+}
+
+section.right:hover {
+    box-shadow: none;
+}
+
+section h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 3em;
+    text-transform: capitalize;
+    color: #FFFD82;
+    text-shadow: 6px 4px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+section .line {
+    height: 2px;
+    background-color:#FFFD82;
+    width: 4em;
+    margin: 0 auto;
+}
+
+section p {
+    font-family: 'Baumans', cursive;
+    font-size: 1.5em;
+    color: #BCBDC0;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+
+
+footer {
+    clear: both;
 }
