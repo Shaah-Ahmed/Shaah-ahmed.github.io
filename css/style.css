@@ -20,12 +20,15 @@ h1 {
 
 .header {
     
-    background:  url("../img/hero021.jpeg");
+    background:  url("../img/04.jpeg");
     background-size: cover; 
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+
+    background-attachment: fixed;
+
 
 }
 
@@ -36,6 +39,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    
 }
 
 nav a {
@@ -44,8 +48,9 @@ nav a {
     text-transform: uppercase;
     font-size: 1.3em;
     text-decoration: none;
-    color: #1D3557;
+    color: #F9F8F8;
     padding: 1em;
+    margin-top: 1em;
 
     transition: ease-in-out 250ms;
    
@@ -53,7 +58,7 @@ nav a {
 
 nav a:hover, nav a:focus, nav a:active {
     transform: translateY(3px);
-    color: rgba(29, 53, 87, 0.767);
+    color: rgba(249, 248, 248, 0.726);
 }
 
 
@@ -70,6 +75,7 @@ nav a:hover, nav a:focus, nav a:active {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    padding-top: 2em;
 
 
 }
@@ -128,7 +134,7 @@ nav a:hover, nav a:focus, nav a:active {
     text-align: center;
     text-transform: uppercase;
 
-    color: #1D3557;
+    color: #F4FAFF;
 
     animation: fadeinDown 9s infinite;
 
@@ -138,13 +144,13 @@ nav a:hover, nav a:focus, nav a:active {
 
 .main-text, .main-text1, .main-text2 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     max-width: 35em;
     font-size: 1.3em;
     word-spacing: 2px;
     line-height: 1.2;
-    color: rgb(29, 53, 87); 
+    color: #F4FAFF; 
     animation: fadeinUp 9s infinite;
     
 }
@@ -157,12 +163,13 @@ nav a:hover, nav a:focus, nav a:active {
 
 
 .content {
-    background-image: url("../img/hero01.jpeg");
+    background-image: url("../img/01.jpeg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     height: 220vh;
     width: 100%;
+
     
 
 } 
