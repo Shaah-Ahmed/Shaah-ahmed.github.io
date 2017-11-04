@@ -26,6 +26,7 @@ h1 {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+
 }
 
 /* navigation */
@@ -69,6 +70,7 @@ nav a:hover, nav a:focus, nav a:active {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -159,7 +161,7 @@ nav a:hover, nav a:focus, nav a:active {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: 200vh;
+    height: 220vh;
     width: 100%;
     
 
@@ -194,7 +196,89 @@ nav a:hover, nav a:focus, nav a:active {
     max-width: 30em;
 }
 
-#content-header {
-    animation-duration: 2s;
+.section-info {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background: rgba(245, 245, 245, 0.493);
+    border-radius: 2em;
 }
 
+.section-content {
+    overflow: hidden;
+    min-width: 15em;
+    max-width: 20em;
+    height: 20em;
+    text-align: center;
+    color: #1D3557;
+    padding: 1em;
+
+    margin: 1em;
+    border-bottom: 2px solid white;
+}
+
+#code, #paint-brush {
+    font-size: 6em;
+}
+
+#code {
+    color: #1D1E18;
+    background: #CA054D;
+    padding: 1rem;
+    border-radius: 20%;
+}
+
+#paint-brush {
+    color: #1D1E18;
+    background: #43AA8B;
+    padding: 1rem;
+    border-radius: 20%;
+}
+
+#handshake {
+    font-size: 5em;
+
+    color: #1D1E18;
+    background: #FEB95F;
+    padding: 1.5rem 1rem;
+
+    border-radius: 20%;
+}
+
+.section-header {
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.section-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+}
+
+
+
+
+/* ===========================================
+===============================================
+ */
+
+ .content-2{
+    width: 100%;
+    height: 100vh;
+ }
+
+ .content-2-img {
+     position: relative;
+     width: 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+     filter: blur(3px);
+ }
