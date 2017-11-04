@@ -22,7 +22,7 @@ window.onload = function animate() {
         }
         x[slideIndex - 1].style.display = "flex";
 
-        setTimeout(carousel, 7000); // Change Interval
+        setTimeout(carousel, 8000); // Change Interval
     };
 
 

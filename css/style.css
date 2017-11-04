@@ -19,7 +19,7 @@ h1 {
 /* FIrst background Image */
 
 .header {
-    /* position: fixed; */
+    
     background:  url("../img/hero021.jpeg");
     background-size: cover; 
     background-position: bottom center;
@@ -130,7 +130,7 @@ nav a:hover, nav a:focus, nav a:active {
 
     color: #1D3557;
 
-    animation: fadeinDown 7s infinite;
+    animation: fadeinDown 8s infinite;
 
     
 }
@@ -145,7 +145,7 @@ nav a:hover, nav a:focus, nav a:active {
     word-spacing: 2px;
     line-height: 1.2;
     color: rgb(29, 53, 87); 
-    animation: fadeinUp 7s infinite;
+    animation: fadeinUp 8s infinite;
     
 }
 
