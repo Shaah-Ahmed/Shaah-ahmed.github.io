@@ -1,0 +1,200 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Source+Sans+Pro:300,400');
+
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/* global stuff */
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+}
+
+/* FIrst background Image */
+
+.header {
+    /* position: fixed; */
+    background:  url("../img/hero021.jpeg");
+    background-size: cover; 
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* navigation */
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #1D3557;
+    padding: 1em;
+
+    transition: ease-in-out 250ms;
+   
+}
+
+nav a:hover, nav a:focus, nav a:active {
+    transform: translateY(3px);
+    color: rgba(29, 53, 87, 0.767);
+}
+
+
+
+
+/* Hero Image and content */
+
+.hero {
+    display: flex;
+    
+    flex-direction: column;
+    height: 70vh;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@keyframes fadeinDown {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    88% {
+        opacity: 1;
+    }
+
+    100% {
+      opacity: 0;  
+    }
+}
+
+
+@keyframes fadeinUp {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    88% {
+        opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;  
+    }
+}
+
+
+
+
+
+.main-header, .main-header1, .main-header2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+
+    margin: -50px 0 0 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #1D3557;
+
+    animation: fadeinDown 7s infinite;
+
+    
+}
+
+
+.main-text, .main-text1, .main-text2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    max-width: 35em;
+    font-size: 1.3em;
+    word-spacing: 2px;
+    line-height: 1.2;
+    color: rgb(29, 53, 87); 
+    animation: fadeinUp 7s infinite;
+    
+}
+
+
+/* =============================== 
+    SECTION TWO
+==================================*/
+
+
+
+.content {
+    background-image: url("../img/hero01.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100%;
+    
+
+} 
+
+.content-title {
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: .3em;
+    color: #1D3557;
+}
+
+.content-text {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #1D3557;
+    max-width: 30em;
+}
+
+#content-header {
+    animation-duration: 2s;
+}
+

@@ -1,0 +1,112 @@
+
+// =======================================================================
+// Waypoint functions - also I Love Mariyam Aana Ahmed- My Queen, My love
+// ======================================================================
+
+
+// =====================================================================
+// Quote 0
+// =====================================================================
+
+var waypoint = new Waypoint({
+    element: document.getElementById('main-header'), 
+    handler: function (direction) {
+       if (direction === "down") {
+        document.getElementById("main-header").classList.remove('animated');
+        document.getElementById("main-header").classList.remove('fadeInDown');
+       } else {
+        document.getElementById("main-header").classList.add('animated');
+        document.getElementById("main-header").classList.add('fadeInDown'); 
+       }
+    }, 
+    offset: '-30%'
+},);
+
+
+
+
+var waypoint = new Waypoint({
+    element: document.getElementById('main-header'),
+    handler: function (direction) {
+       if (direction === "down") {
+        document.getElementById("main-text").classList.remove('animated');
+        document.getElementById("main-text").classList.remove('fadeInUp');
+       } else {
+        document.getElementById("main-text").classList.add('animated');
+        document.getElementById("main-text").classList.add('fadeInUp'); 
+       }
+    }, 
+    offset: '-30%'
+},);
+
+
+// =====================================================================
+// Quote 1
+// =====================================================================
+
+var waypoint = new Waypoint({
+    element: document.getElementById('main-header1'), 
+    handler: function (direction) {
+       if (direction === "down") {
+        document.getElementById("main-header1").classList.remove('animated');
+        document.getElementById("main-header1").classList.remove('fadeInDown');
+       } else {
+        document.getElementById("main-header1").classList.add('animated');
+        document.getElementById("main-header1").classList.add('fadeInDown'); 
+       }
+    }, 
+    offset: '-30%'
+},);
+
+
+
+
+var waypoint = new Waypoint({
+    element: document.getElementById('main-header1'),
+    handler: function (direction) {
+       if (direction === "down") {
+        document.getElementById("main-text1").classList.remove('animated');
+        document.getElementById("main-text1").classList.remove('fadeInUp');
+       } else {
+        document.getElementById("main-text1").classList.add('animated');
+        document.getElementById("main-text1").classList.add('fadeInUp'); 
+       }
+    }, 
+    offset: '-30%'
+},);
+
+
+// =====================================================================
+// Quote 2
+// =====================================================================
+
+var waypoint = new Waypoint({
+    element: document.getElementById('main-header2'), 
+    handler: function (direction) {
+       if (direction === "down") {
+        document.getElementById("main-header2").classList.remove('animated');
+        document.getElementById("main-header2").classList.remove('fadeInDown');
+       } else {
+        document.getElementById("main-header2").classList.add('animated');
+        document.getElementById("main-header2").classList.add('fadeInDown'); 
+       }
+    }, 
+    offset: '-30%'
+},);
+
+
+
+
+var waypoint = new Waypoint({
+    element: document.getElementById('main-header2'),
+    handler: function (direction) {
+       if (direction === "down") {
+        document.getElementById("main-text2").classList.remove('animated');
+        document.getElementById("main-text2").classList.remove('fadeInUp');
+       } else {
+        document.getElementById("main-text2").classList.add('animated');
+        document.getElementById("main-text2").classList.add('fadeInUp'); 
+       }
+    }, 
+    offset: '-30%'
+},);

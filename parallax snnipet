@@ -1,0 +1,27 @@
+
+// html items
+
+// var bG = document.querySelector("#bG2");
+// var test1 = document.querySelector("#test1")
+
+
+// // Scroll position Finder function
+
+// var xScrollPosition;
+// var yScrollPosition;
+
+
+// function scrollLoop(e) {
+//     xScrollPosition = window.scrollX;
+//     yScrollPosition = window.scrollY;
+
+//     setTranslate(0, yScrollPosition, test1);
+//     setTranslate(0, yScrollPosition, bG);
+
+//     requestAnimationFrame(scrollLoop);
+// }
+
+// function setTranslate (xPos, yPos, el) {
+//     el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+// }
+
