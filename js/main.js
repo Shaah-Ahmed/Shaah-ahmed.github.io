@@ -27,3 +27,25 @@ window.onload = function animate() {
 
 
 };
+
+
+// ================================================================
+// Waypoints
+// ================================================================
+
+
+
+
+// var waypoint = new Waypoint({
+//     element: document.getElementById('main-header'),
+//     handler: function (direction) {
+//        if (direction === "down") {
+//         document.getElementById("content-header").style.display = "block";
+//         document.getElementById("content-header").style.display = "block";
+//        } else {
+//         document.getElementById("content-header").style.display = "none";
+//         document.getElementById("content-header").style.display = "none";
+//        }
+//     }, 
+//     offset: '-20%'
+// },);

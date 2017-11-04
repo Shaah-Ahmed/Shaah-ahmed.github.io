@@ -20,9 +20,9 @@ h1 {
 
 .header {
     
-    background:  url("../img/04.jpeg");
+    background:  url("../img/03.jpeg");
     background-size: cover; 
-    background-position: bottom center;
+    background-position: top center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -76,6 +76,11 @@ nav a:hover, nav a:focus, nav a:active {
     justify-content: center;
     align-items: center;
     padding-top: 2em;
+
+    background: rgba(110, 113, 120, 0.507); 
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    box-shadow: 0px 0px 11px 0px #0000003d;
 
 
 }
@@ -134,7 +139,7 @@ nav a:hover, nav a:focus, nav a:active {
     text-align: center;
     text-transform: uppercase;
 
-    color: #F4FAFF;
+    color: #F9F8F8;
 
     animation: fadeinDown 9s infinite;
 
@@ -147,10 +152,11 @@ nav a:hover, nav a:focus, nav a:active {
     font-weight: 400;
     text-align: center;
     max-width: 35em;
+    min-width: 90%;
     font-size: 1.3em;
     word-spacing: 2px;
     line-height: 1.2;
-    color: #F4FAFF; 
+    color: #F9F8F8; 
     animation: fadeinUp 9s infinite;
     
 }
@@ -191,6 +197,7 @@ nav a:hover, nav a:focus, nav a:active {
     margin-top: 2em;
     margin-bottom: .3em;
     color: #1D3557;
+    /* display: none; */
 }
 
 .content-text {
@@ -213,6 +220,11 @@ nav a:hover, nav a:focus, nav a:active {
 
     background: rgba(245, 245, 245, 0.493);
     border-radius: 2em;
+
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    box-shadow: 0px 0px 11px 0px #0000003d;
+
+    
 }
 
 .section-content {
@@ -237,6 +249,8 @@ nav a:hover, nav a:focus, nav a:active {
     background: #CA054D;
     padding: 1rem;
     border-radius: 20%;
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
 #paint-brush {
@@ -244,6 +258,8 @@ nav a:hover, nav a:focus, nav a:active {
     background: #43AA8B;
     padding: 1rem;
     border-radius: 20%;
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
 #handshake {
@@ -254,6 +270,8 @@ nav a:hover, nav a:focus, nav a:active {
     padding: 1.5rem 1rem;
 
     border-radius: 20%;
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
 .section-header {
