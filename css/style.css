@@ -1,15 +1,16 @@
-/* Google fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Lora|Slabo+27px');
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Taviraj');
 /* 
-font-family: 'Lora', serif;
-font-family: 'Slabo 27px', serif; */
+font-family: 'Taviraj', serif; 
+font-family: 'Libre Franklin', sans-serif;
+*/
 
 
 /* global stuff */
 
 h1 {
-    font-family: 'Lora', serif;
+    font-family: 'Taviraj', serif;
     font-weight: 100;
     font-size: 3.2em;
 }
@@ -18,7 +19,7 @@ h1 {
 
 .header {
     
-    background:  url("../img/03.jpeg");
+    background:  url("../img/sand.jpeg");
     background-size: cover; 
     background-position: top;
     background-repeat: no-repeat;
@@ -38,21 +39,25 @@ nav {
     display: flex;
     justify-content: center;
     /* padding-left: 1.65em; */
+
+   
     
 }
 
 nav a {
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.3em;
     text-decoration: none;
-    color: #F9F8F8;
+    color: rgb(255, 255, 255);
     padding: 1em;
     margin-top: 1em;
-    ;
 
     transition: ease-in-out 250ms;
+
+    
+
    
 }
 
@@ -77,10 +82,10 @@ nav a:hover, nav a:focus, nav a:active {
     align-items: center;
     padding-top: 2em;
 
-    background: rgba(110, 113, 120, 0.507); 
-    /* border-radius: 1em; */
+    /* background: rgba(110, 113, 120, 0.507); 
+  
     -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
-    box-shadow: 0px 0px 11px 0px #0000003d;
+    box-shadow: 0px 0px 11px 0px #0000003d; */
 
 
 }
@@ -130,14 +135,14 @@ nav a:hover, nav a:focus, nav a:active {
 
 
 .main-header, .main-header1, .main-header2 {
-    font-family: 'Lora', serif;
+    font-family: 'Taviraj', serif;
     font-weight: 100;
     font-size: 3.5em;
 
     margin: -50px 0 0 0;
 
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     color: #F9F8F8;
 
@@ -148,12 +153,12 @@ nav a:hover, nav a:focus, nav a:active {
 
 
 .main-text, .main-text1, .main-text2 {
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     text-align: center;
     max-width: 35em;
     min-width: 90%;
-    font-size: 1.3em;
+    font-size: 1.5em;
     word-spacing: 2px;
     line-height: 1.2;
     color: #F9F8F8; 
@@ -181,7 +186,7 @@ nav a:hover, nav a:focus, nav a:active {
 
 
 .content {
-    background-image: url("../img/01.jpeg");
+    background-image: url("../img/pine.jpeg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -209,10 +214,10 @@ nav a:hover, nav a:focus, nav a:active {
 
 .content-header {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-top: .3em;
     margin-bottom: .3em;
-    color: #1D3557;
+    color: rgb(255, 255, 255);
     display: none;
     animation: fadeIn 1s ease-in;
     
@@ -221,11 +226,11 @@ nav a:hover, nav a:focus, nav a:active {
 
 .content-text {
     text-align: center;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Libre Franklin', sans-serif;
     /* font-weight: 300; */
     font-size: 1.3em;
     margin-top: 10px;
-    color: #1D3557;
+    color: rgb(255, 255, 255);
     max-width: 30em;
     display: none;
     animation: fadeIn 1s ease-in;
@@ -240,11 +245,14 @@ nav a:hover, nav a:focus, nav a:active {
     flex-wrap: wrap;
     justify-content: center;
 
-    background: rgba(245, 245, 245, 0.493);
+    /* background: rgba(245, 245, 245, 0.493); */
     /* border-radius: 2em; */
 
     -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
     box-shadow: 0px 0px 11px 0px #0000003d;
+
+    animation: fadeIn 1s ease-in;
+
 
     
 }
@@ -255,22 +263,21 @@ nav a:hover, nav a:focus, nav a:active {
     max-width: 20em;
     height: 20em;
     text-align: center;
-    color: #1D3557;
+    color: rgb(255, 255, 255);
     padding: 1em;
 
     margin: 1em;
-    border-bottom: 2px solid white;
+    
 }
 
-#code, #paint-brush {
-    font-size: 6em;
-}
+
 
 #code {
     color: #1D1E18;
     background: #CA054D;
     padding: 1rem;
-    /* border-radius: 20%; */
+    font-size: 6em;
+    border-radius: 100%;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
@@ -278,8 +285,9 @@ nav a:hover, nav a:focus, nav a:active {
 #paint-brush {
     color: #1D1E18;
     background: #43AA8B;
-    padding: 1rem;
-    /* border-radius: 20%; */
+    padding: .5em;
+    font-size: 4.2em;
+    border-radius: 100%;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
@@ -291,21 +299,21 @@ nav a:hover, nav a:focus, nav a:active {
     background: #FEB95F;
     padding: 1.5rem 1rem;
 
-    /* border-radius: 20%; */
+    border-radius: 100%;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
 .section-header {
 
-    font-family: 'Lora', serif;
+    font-family: 'Taviraj', serif;
     font-weight: 100;
     font-size: 2.5em;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .section-text {
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 1em;
 }
 
