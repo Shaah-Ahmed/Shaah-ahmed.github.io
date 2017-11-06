@@ -36,16 +36,31 @@ window.onload = function animate() {
 
 
 
-// var waypoint = new Waypoint({
-//     element: document.getElementById('main-header'),
-//     handler: function (direction) {
-//        if (direction === "down") {
-//         document.getElementById("content-header").style.display = "block";
-//         document.getElementById("content-header").style.display = "block";
-//        } else {
-//         document.getElementById("content-header").style.display = "none";
-//         document.getElementById("content-header").style.display = "none";
-//        }
-//     }, 
-//     offset: '-20%'
-// },);
+var waypoint1 = new Waypoint({
+    element: document.getElementById('cd'),
+    handler: function (direction) {
+        if (direction === "down") {
+            document.getElementById("content-header").style.display = "flex";
+            document.getElementById("content-text").style.display = "flex";
+        } else {
+            console.log("up")
+        }
+    },
+    offset: "55%"
+}, );
+
+var waypoint2 = new Waypoint({
+    element: document.getElementById('cd'),
+    handler: function (direction) {
+        if (direction === "down") {
+            console.log("gfchg")
+        } else {
+            document.getElementById("content-header").style.display = "none";
+            document.getElementById("content-text").style.display = "none";
+        }
+    },
+    offset: "90%"
+}, );
+
+
+
