@@ -83,6 +83,10 @@ nav a:active {
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
+.hero:nth-child(1){
+    display: flex;
+}
+
 @keyframes fadeinDown {
     0% {
         transform: translateY(-40px);
