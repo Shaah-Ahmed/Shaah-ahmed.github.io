@@ -1,35 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Raleway');
 
-
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Taviraj');
 /* 
-font-family: 'Taviraj', serif; 
 font-family: 'Libre Franklin', sans-serif;
+font-family: 'Raleway', sans-serif;
 */
 
 
 /* global stuff */
 
+html {
+    background-image: url("../img/pine.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
 h1 {
-    font-family: 'Taviraj', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 3.2em;
 }
 
+
 /* FIrst background Image */
 
 .header {
-    
-    background:  url("../img/sand.jpeg");
-    background-size: cover; 
+    background: url("../img/leavy.jpeg");
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-
     background-attachment: fixed;
-
-
 }
+
 
 /* navigation */
 
@@ -39,13 +44,10 @@ nav {
     display: flex;
     justify-content: center;
     /* padding-left: 1.65em; */
-
-   
-    
 }
 
 nav a {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.3em;
@@ -53,27 +55,21 @@ nav a {
     color: rgb(255, 255, 255);
     padding: 1em;
     margin-top: 1em;
-
     transition: ease-in-out 250ms;
-
-    
-
-   
 }
 
-nav a:hover, nav a:focus, nav a:active {
+nav a:hover,
+nav a:focus,
+nav a:active {
     transform: translateY(3px);
     color: rgba(249, 248, 248, 0.726);
 }
-
-
 
 
 /* Hero Image and content */
 
 .hero {
     display: flex;
-    
     flex-direction: column;
     height: 70vh;
     width: 90%;
@@ -81,15 +77,11 @@ nav a:hover, nav a:focus, nav a:active {
     justify-content: center;
     align-items: center;
     padding-top: 2em;
-
-    /* background: rgba(110, 113, 120, 0.507); 
-  
-    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
-    box-shadow: 0px 0px 11px 0px #0000003d; */
-
-
+    background: rgba(110, 113, 120, 0.507);
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041;
+    box-shadow: 0px 0px 11px 0px #0000003d;
 }
-
 
 @keyframes fadeinDown {
     0% {
@@ -100,16 +92,13 @@ nav a:hover, nav a:focus, nav a:active {
         transform: translateY(0);
         opacity: 1;
     }
-
     88% {
         opacity: 1;
     }
-
     100% {
-      opacity: 0;  
+        opacity: 0;
     }
 }
-
 
 @keyframes fadeinUp {
     0% {
@@ -120,40 +109,31 @@ nav a:hover, nav a:focus, nav a:active {
         transform: translateY(0);
         opacity: 1;
     }
-
     88% {
         opacity: 1;
     }
-    
     100% {
-      opacity: 0;  
+        opacity: 0;
     }
 }
 
-
-
-
-
-.main-header, .main-header1, .main-header2 {
-    font-family: 'Taviraj', serif;
+.main-header,
+.main-header1,
+.main-header2 {
+    font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 3.5em;
-
     margin: -50px 0 0 0;
-
     text-align: center;
-    text-transform: capitalize;
-
+    text-transform: uppercase;
     color: #F9F8F8;
-
     animation: fadeinDown 9s infinite;
-
-    
 }
 
-
-.main-text, .main-text1, .main-text2 {
-    font-family: 'Libre Franklin', sans-serif;
+.main-text,
+.main-text1,
+.main-text2 {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-align: center;
     max-width: 35em;
@@ -161,16 +141,14 @@ nav a:hover, nav a:focus, nav a:active {
     font-size: 1.5em;
     word-spacing: 2px;
     line-height: 1.2;
-    color: #F9F8F8; 
+    color: #F9F8F8;
     animation: fadeinUp 9s infinite;
-    
 }
 
 
 /* =============================== 
     SECTION TWO
 ==================================*/
-
 
 @keyframes fadeIn {
     0% {
@@ -184,44 +162,38 @@ nav a:hover, nav a:focus, nav a:active {
 }
 
 
-
-.content {
+/* .content {
     background-image: url("../img/pine.jpeg");
     background-size: cover;
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 
     width: 100%;
-    height: 100%
+    height: 300%;
 
     
 
-} 
+}  */
 
 .content-title {
     width: 80%;
-    height: 18em;
+    height: 23em;
     margin: 0 auto;
-
-    
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    overflow: auto;
 }
 
 .content-header {
     text-align: center;
-    text-transform: capitalize;
-    margin-top: .3em;
+    text-transform: uppercase;
+    margin-top: 1em;
     margin-bottom: .3em;
     color: rgb(255, 255, 255);
     display: none;
     animation: fadeIn 1s ease-in;
-    
-    
 }
 
 .content-text {
@@ -237,24 +209,18 @@ nav a:hover, nav a:focus, nav a:active {
 }
 
 .section-info {
-    width: 90%;
+    width: 100%;
     margin: 2em auto;
-    
-
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
-
     /* background: rgba(245, 245, 245, 0.493); */
     /* border-radius: 2em; */
-
-    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
 
     animation: fadeIn 1s ease-in;
 
-
-    
 }
 
 .section-content {
@@ -264,13 +230,11 @@ nav a:hover, nav a:focus, nav a:active {
     height: 20em;
     text-align: center;
     color: rgb(255, 255, 255);
-    padding: 1em;
-
+    padding: 0;
     margin: 1em;
-    
+
+
 }
-
-
 
 #code {
     color: #1D1E18;
@@ -278,7 +242,7 @@ nav a:hover, nav a:focus, nav a:active {
     padding: 1rem;
     font-size: 6em;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
@@ -288,28 +252,25 @@ nav a:hover, nav a:focus, nav a:active {
     padding: .5em;
     font-size: 4.2em;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
 #handshake {
     font-size: 5em;
-
     color: #1D1E18;
     background: #FEB95F;
     padding: 1.5rem 1rem;
-
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 11px 0px #00000041; 
+    -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
 
 .section-header {
-
-    font-family: 'Taviraj', serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 2.5em;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .section-text {
@@ -318,22 +279,27 @@ nav a:hover, nav a:focus, nav a:active {
 }
 
 
-
-
 /* ===========================================
 ===============================================
  */
 
- .content-2{
+.content-2 {
     width: 100%;
     height: 100vh;
- }
+}
 
- .content-2-img {
-     position: relative;
-     width: 100%;
-     background-size: cover;
-     background-repeat: no-repeat;
+.content-2-img {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
 
-     filter: blur(3px);
- }
+
+/* ================================================================ */
+
+.test-box {
+    width: 100%;
+    height: 100vh;
+}

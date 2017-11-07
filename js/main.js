@@ -43,7 +43,7 @@ var waypoint1 = new Waypoint({
             document.getElementById("content-header").style.display = "flex";
             document.getElementById("content-text").style.display = "flex";
         } else {
-            console.log("up")
+            document.getElementById("igloo").style.display = "none";
         }
     },
     offset: "55%"
@@ -52,15 +52,29 @@ var waypoint1 = new Waypoint({
 var waypoint2 = new Waypoint({
     element: document.getElementById('cd'),
     handler: function (direction) {
-        if (direction === "down") {
-            console.log("gfchg")
-        } else {
+        if (direction === "up") {
+            
             document.getElementById("content-header").style.display = "none";
             document.getElementById("content-text").style.display = "none";
-        }
+        } 
     },
     offset: "90%"
 }, );
 
+var waypoint2 = new Waypoint({
+    element: document.getElementById('cd'),
+    handler: function (direction) {
+        if (direction === "down") {
+            document.getElementById("igloo").style.display = "flex";
+        } else {
+            console.log("up")
+        }
+    },
+    offset: "10%"
+}, );
 
+
+
+
+// =====================================================================
 
