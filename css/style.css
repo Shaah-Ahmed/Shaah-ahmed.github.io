@@ -14,12 +14,23 @@ html {
     background-position: top;
     background-repeat: repeat-x;
     background-attachment: fixed;
+    width: 100vw;
+
+    margin: 0 auto;
 }
 
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 3.2em;
+}
+
+@media (max-width: 363px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        font-size: 3em;
+    }
 }
 
 
@@ -53,9 +64,23 @@ nav a {
     font-size: 1.3em;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 1em;
+    padding: .7em;
     margin-top: 1em;
     transition: ease-in-out 250ms;
+}
+
+@media (max-width: 363px){
+    nav a {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: .7em;
+        margin-top: 1em;
+        transition: ease-in-out 250ms;
+    }
 }
 
 nav a:hover,
@@ -149,6 +174,36 @@ nav a:active {
     animation: fadeinUp 9s infinite;
 }
 
+@media (max-width: 363px){
+    .main-header,
+    .main-header1,
+    .main-header2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        font-size: 3em;
+        margin: -50px 0 0 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F9F8F8;
+        animation: fadeinDown 9s infinite;
+    }
+    
+    .main-text,
+    .main-text1,
+    .main-text2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        max-width: 35em;
+        min-width: 90%;
+        font-size: 1em;
+        word-spacing: 2px;
+        line-height: 1.2;
+        color: #F9F8F8;
+        animation: fadeinUp 9s infinite;
+    }
+}
+
 
 /* =============================== 
     SECTION TWO
@@ -166,18 +221,6 @@ nav a:active {
 }
 
 
-/* .content {
-    background-image: url("../img/pine.jpeg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: repeat-x;
-
-    width: 100%;
-    height: 300%;
-
-    
-
-}  */
 
 .content-title {
     width: 80%;
@@ -210,6 +253,13 @@ nav a:active {
     max-width: 30em;
     display: none;
     animation: fadeIn 1s ease-in;
+}
+
+
+@media (max-width: 363px) {
+    .content-text {
+        font-size: 1em;
+    }
 }
 
 .section-info {

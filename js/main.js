@@ -1,7 +1,3 @@
-// Page load event handler and scroll position finder enabler 
-
-window.addEventListener("DOMContentLoaded", false);
-
 
 // Function to add class after page load - I love kittypie <3
 window.onload = function animate() {
@@ -66,9 +62,7 @@ var waypoint2 = new Waypoint({
     handler: function (direction) {
         if (direction === "down") {
             document.getElementById("igloo").style.display = "flex";
-        } else {
-            console.log("up")
-        }
+        } 
     },
     offset: "10%"
 }, );
