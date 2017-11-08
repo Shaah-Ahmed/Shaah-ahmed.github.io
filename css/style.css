@@ -9,12 +9,13 @@ font-family: 'Raleway', sans-serif;
 /* global stuff */
 
 html {
-    background-image: url("../img/pine.jpeg");
+    background: url("../img/pine.jpeg");
     background-size: cover;
     background-position: top;
     background-repeat: repeat-x;
     background-attachment: fixed;
     width: 100%;
+    padding-bottom: 2em;
 
     margin: 0 auto;
 }
@@ -237,11 +238,12 @@ nav a:active {
 .content-header {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: .3em;
     color: rgb(255, 255, 255);
-    display: none;
-    animation: fadeIn 1s ease-in;
+    display: flex;
+    /* animation: fadeIn 1s ease-in; */
+    opacity: 0;
 }
 
 .content-text {
@@ -252,8 +254,17 @@ nav a:active {
     margin-top: 10px;
     color: rgb(255, 255, 255);
     max-width: 30em;
-    display: none;
-    animation: fadeIn 1s ease-in;
+    display: flex;
+    /* animation: fadeIn 1s ease-in; */
+    opacity: 0;
+}
+
+#content-header {
+    animation-duration: 2s;
+}
+
+#content-text {
+    animation-duration: 2s;
 }
 
 
@@ -264,17 +275,20 @@ nav a:active {
 }
 
 .section-info {
-    width: 100%;
+    width: 90%;
     margin: 2em auto;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background: rgba(245, 245, 245, 0.493); */
-    /* border-radius: 2em; */
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 1em;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
 
-    animation: fadeIn 1s ease-in;
+    padding-top: 1em;
+
+    /* animation: fadeIn 1s ease-in; */
+    opacity: 0;
 
 }
 
@@ -331,6 +345,19 @@ nav a:active {
 .section-text {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1em;
+
+}
+
+@media (max-width: 363px) {
+    .section-header {
+        font-size: 2em;
+    }
+    .section-text {
+        font-size: .8em;
+    }
+    .section-content {
+        height: 16em;
+    }
 }
 
 
@@ -355,6 +382,11 @@ nav a:active {
 /* ================================================================ */
 
 .test-box {
-    width: 100%;
+
+    width: 90%;
     height: 100vh;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 1em;
 }
+

@@ -35,11 +35,16 @@
 var waypoint1 = new Waypoint({
     element: document.getElementById('cd'),
     handler: function (direction) {
-        if (direction === "down") {
-            document.getElementById("content-header").style.display = "flex";
-            document.getElementById("content-text").style.display = "flex";
+        if (direction === "down") {   
+            document.getElementById("content-text").classList.add('animated')
+            document.getElementById("content-text").classList.add('fadeInUp')
+            
+            document.getElementById("content-header").classList.add('animated')
+            document.getElementById("content-header").classList.add('fadeInDown')
+            
         } else {
-            document.getElementById("igloo").style.display = "none";
+            document.getElementById("igloo").classList.remove('animated')
+            document.getElementById("igloo").classList.remove('fadeInUp')
         }
     },
     offset: "55%"
@@ -49,9 +54,12 @@ var waypoint2 = new Waypoint({
     element: document.getElementById('cd'),
     handler: function (direction) {
         if (direction === "up") {
+            document.getElementById("content-text").classList.remove('animated')
+            document.getElementById("content-text").classList.remove('fadeInUp')
             
-            document.getElementById("content-header").style.display = "none";
-            document.getElementById("content-text").style.display = "none";
+            document.getElementById("content-header").classList.remove('animated')
+            document.getElementById("content-header").classList.remove('fadeInDown')
+            
         } 
     },
     offset: "90%"
@@ -61,7 +69,8 @@ var waypoint2 = new Waypoint({
     element: document.getElementById('cd'),
     handler: function (direction) {
         if (direction === "down") {
-            document.getElementById("igloo").style.display = "flex";
+            document.getElementById("igloo").classList.add('animated')
+            document.getElementById("igloo").classList.add('fadeInUp')
         } 
     },
     offset: "10%"
