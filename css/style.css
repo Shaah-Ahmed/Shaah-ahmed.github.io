@@ -10,7 +10,7 @@ font-family: 'Raleway', sans-serif;
 
 html {
     position: relative;
-    background-image: linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%);
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
     /* url("../img/pine.jpeg"); */
     background-size: cover;
     background-position: center;
@@ -78,7 +78,7 @@ nav a {
     text-transform: uppercase;
     font-size: 1.3em;
     text-decoration: none;
-    color:rgb(10, 17, 40);
+    color: #eee;
     padding: .7em;
     margin-top: 1em;
     transition: ease-in-out 250ms;
@@ -102,7 +102,7 @@ nav a:hover,
 nav a:focus,
 nav a:active {
     transform: translateY(3px);
-    color:rgba(10, 17, 40, 0.651);
+    color: rgba(238, 238, 238, 0.692);
 }
 
 
@@ -250,7 +250,7 @@ nav a:active {
     text-transform: uppercase;
     margin-top: .5em;
     margin-bottom: .3em;
-    color: #0A1128;
+    color: #eee;
     display: flex;
     /* animation: fadeIn 1s ease-in; */
     opacity: 0;
@@ -262,7 +262,7 @@ nav a:active {
     /* font-weight: 300; */
     font-size: 1.3em;
     margin-top: 10px;
-    color: #0A1128;
+    color: #eee;
     max-width: 30em;
     display: flex;
     /* animation: fadeIn 1s ease-in; */
