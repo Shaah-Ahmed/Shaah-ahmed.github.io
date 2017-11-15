@@ -9,15 +9,18 @@ font-family: 'Raleway', sans-serif;
 /* global stuff */
 
 html {
-    background: url("../img/pine.jpeg");
+    position: relative;
+    background-image: linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%);
+    /* url("../img/pine.jpeg"); */
     background-size: cover;
-    background-position: top;
-    background-repeat: repeat-x;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     padding-bottom: 2em;
-
     margin: 0 auto;
+
+    
 }
 
 h1 {
@@ -34,23 +37,28 @@ h1 {
     }
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-  }
+}
 
 
 /* FIrst background Image */
 
 .header {
-    background: url("../img/leavy.jpeg");
+    background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+    /* url("../img/leavy.jpeg"); */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background-attachment: fixed;
+
+
+    /* background-attachment: fixed; */
 }
 
 
@@ -76,7 +84,7 @@ nav a {
     transition: ease-in-out 250ms;
 }
 
-@media (max-width: 363px){
+@media (max-width: 363px) {
     nav a {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
@@ -94,13 +102,13 @@ nav a:hover,
 nav a:focus,
 nav a:active {
     transform: translateY(3px);
-    color: rgba(249, 248, 248, 0.726);
+    color: rgba(255, 255, 255, 0.603);
 }
 
 
 /* Hero Image and content */
 
-.hero:nth-child(1){
+.hero:nth-child(1) {
     display: flex;
 }
 
@@ -113,12 +121,11 @@ nav a:active {
     justify-content: center;
     align-items: center;
     padding-top: 2em;
-    background: rgba(110, 113, 120, 0.507);
+    background-image: linear-gradient( 135deg, rgba(59, 38, 103, 0.61) 10%, rgba(188, 120, 236, 0.61) 100%);
     border-radius: 1em;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
 }
-
 
 @keyframes fadeinDown {
     0% {
@@ -182,7 +189,7 @@ nav a:active {
     animation: fadeinUp 9s infinite;
 }
 
-@media (max-width: 363px){
+@media (max-width: 363px) {
     .main-header,
     .main-header1,
     .main-header2 {
@@ -195,7 +202,6 @@ nav a:active {
         color: #F9F8F8;
         animation: fadeinDown 9s infinite;
     }
-    
     .main-text,
     .main-text1,
     .main-text2 {
@@ -228,8 +234,6 @@ nav a:active {
     }
 }
 
-
-
 .content-title {
     width: 80%;
     height: 23em;
@@ -238,7 +242,7 @@ nav a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .content-header {
@@ -246,7 +250,7 @@ nav a:active {
     text-transform: uppercase;
     margin-top: .5em;
     margin-bottom: .3em;
-    color: rgb(255, 255, 255);
+    color: #0A1128;
     display: flex;
     /* animation: fadeIn 1s ease-in; */
     opacity: 0;
@@ -258,21 +262,20 @@ nav a:active {
     /* font-weight: 300; */
     font-size: 1.3em;
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color: #0A1128;
     max-width: 30em;
     display: flex;
     /* animation: fadeIn 1s ease-in; */
     opacity: 0;
 }
 
-#content-header {
+/* #content-header {
     animation-duration: 2s;
 }
 
 #content-text {
     animation-duration: 2s;
-}
-
+} */
 
 @media (max-width: 363px) {
     .content-text {
@@ -286,16 +289,13 @@ nav a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.219);
+    background: rgba(10, 17, 40, 0.623);
     border-radius: 1em;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
-
     padding-top: 1em;
-
     /* animation: fadeIn 1s ease-in; */
     opacity: 0;
-
 }
 
 .section-content {
@@ -307,8 +307,6 @@ nav a:active {
     color: rgb(255, 255, 255);
     padding: 0;
     margin: 1em;
-
-
 }
 
 #code {
@@ -351,7 +349,6 @@ nav a:active {
 .section-text {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1em;
-
 }
 
 @media (max-width: 363px) {
@@ -367,25 +364,22 @@ nav a:active {
 }
 
 
-
 /* ================================================================ */
 
 .test-box {
-
     width: 90%;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.219);
+    background: rgba(10, 17, 40, 0.623);
     border-radius: 1em;
     display: flex;
     align-items: center;
-
+    opacity: 0;
 }
 
 .comment-box {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -397,13 +391,10 @@ nav a:active {
     max-width: 15em;
     border-radius: 50%;
     margin: 2em;
-    -webkit-box-shadow: -6px 13px 67px 8px rgba(0,0,0,0.75);
-    -moz-box-shadow: -6px 13px 67px 8px rgba(0,0,0,0.75);
-    box-shadow: -6px 13px 67px 8px rgba(0,0,0,0.75);
-
-  
+    -webkit-box-shadow: -6px 13px 67px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -6px 13px 67px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: -6px 13px 67px 8px rgba(0, 0, 0, 0.75);
 }
-
 
 .comment-section {
     width: 30em;
@@ -415,77 +406,82 @@ nav a:active {
     font-size: 3em;
     text-align: center;
 }
-    
+
 
 /* ===================== */
 
 .mb-wrap {
-    margin : 20px auto; 
-    padding : 20px; 
-    position : relative; 
-    max-width: 45em;
-  } 
-  
-  .mb-wrap p {
-    margin : 0; 
-    padding : 0; 
-  }
-  
-  .mb-wrap blockquote {
-    margin : 0; 
-    padding : 0; 
-    position : relative; 
-  } 
-  
-  .mb-wrap cite {
-    font-style : normal; 
-  } 
-  
-  .mb-style-2 blockquote {
-    padding-top : 150px; 
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    max-width: 27em;
+}
+
+.mb-wrap p {
+    margin: 0;
+    padding: 0;
+}
+
+.mb-wrap blockquote {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.mb-wrap cite {
+    font-style: normal;
+}
+
+.mb-style-2 blockquote {
+    padding-top: 150px;
     text-align: center;
-  } 
-  
-  .mb-style-2 blockquote:after {
-      background: none repeat scroll 0 0 rgba(254, 95, 95, 0.596);
-      border-radius: 50% 50% 50% 50%;
-      color: rgb(255, 255, 255);
-      content: "❞";
-      font-family: 'icons';
-      font-size: 70px;
-      height: 130px;
-      left: 50%;
-      line-height: 130px;
-      margin-left: -65px;
-      position: absolute;
-      text-align: center;
-      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
-      top: 0;
-      width: 130px;
-  }
-  
-  
-  .mb-style-2 blockquote p {
+}
+
+.mb-style-2 blockquote:after {
+    background: none repeat scroll 0 0 rgba(254, 95, 95, 0.596);
+    border-radius: 50% 50% 50% 50%;
+    color: rgb(255, 255, 255);
+    content: "❞";
+    font-family: 'icons';
+    font-size: 70px;
+    height: 130px;
+    left: 50%;
+    line-height: 130px;
+    margin-left: -65px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    top: 0;
+    width: 130px;
+}
+
+.mb-style-2 blockquote p {
     /* background : none repeat scroll 0 0 rgba(255, 255, 255, 0.5);  */
-    box-shadow : 0 -6px 0 rgba(254, 95, 95, 0.5);
-    color : rgb(255, 255, 255);
-    display : inline; 
-    font-family : Baskerville, Georgia, serif; 
-    font-style : italic; 
-    font-size : 28px; 
-    line-height : 46px; 
-  } 
-  
-  .mb-attribution {
-    text-align : right; 
-  } 
-  
-   .mb-author {
-    color : rgb(255, 255, 255);
-    font-size : 18px; 
-    font-weight : bold;  
-    text-shadow : 0 1px 1px rgba(255, 255, 255, 0.1); 
-    text-transform : uppercase; 
+    box-shadow: 0 -6px 0 rgba(254, 95, 95, 0.5);
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-family: Baskerville, Georgia, serif;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 46px;
+}
+
+.mb-attribution {
+    text-align: right;
+}
+
+.mb-author {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
     padding-right: 3em;
-  }  
-  
+}
+
+
+.gallery {
+    height: 100vh;
+    background: #333;
+    margin-top: 2em;
+}
