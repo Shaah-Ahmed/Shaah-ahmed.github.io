@@ -54,7 +54,7 @@
 
     <!-- ==================================================================== -->
 
-    <div class="content">
+    <div class="content-01">
         <div class="content-title" id="cd">
             <h1 class="content-header" id="content-header">grow with us</h1>
             <p class="content-text" id="content-text">Become a part of something great. Join us and together, we can help you grow your business from a simple local
@@ -90,20 +90,15 @@
         <!-- ==================================================================== -->
 
         <div class="test-box" id="tester">
-
             <div class="comment-box">
                 <img class="commenter" src="./img/portrait.jpeg" alt="A portrait">
-
                 <section class="main">
-
                     <div class="mb-wrap mb-style-2">
                         <blockquote cite="http://www.gutenberg.org/ebboks/11">
                             <p> If you don't know where you are going, any road will get you there</p>
                         </blockquote>
                     </div>
                     <!--#mb-wrap-->
-
-
                     <div class="mb-attribution">
                         <p class="mb-author">
                             Lewis Carroll
@@ -111,17 +106,122 @@
                     </div>
                     <!-- #mb-attribution-->
                 </section>
-
             </div>
         </div>
 
     </div>
 
-    <div class="gallery" id="gallery">
+    <!-- ======================================================= -->
+
+    <div class="gallery-box" id="gallery-box">
+        <h1 class="knockout-text">Gallery</h1>
+
+        <div class="gallery">
+            <div class="content">
+                <img src="./img/01-thumb.jpeg" alt="" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="content">
+                <img src="./img/02-thumb.jpeg" alt="" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="content">
+                <img src="./img/03-thumb.jpeg" alt="" onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="content">
+                <img src="./img/04-thumb.jpeg" alt="" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="content">
+                <img src="./img/05-thumb.jpeg" alt="" onclick="openModal();currentSlide(5)">
+            </div>
+            <div class="content">
+                <img src="./img/06-thumb.jpeg" alt="" onclick="openModal();currentSlide(6)">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
 
 
+            <div class="modal-content">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
 
-        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/01.jpeg">
+                    <div class="description">
+                        <h2 class="caption">A Road</h2>
+                        <p class="detais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam iusto et repellendus deleniti hic
+                            corporis incidunt? Aperiam, soluta illo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse, numquam?</p>
+                        <a href="img/01.jpeg" target="_blank">Open fullscreen</a>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/02.jpeg">
+                    <div class="description">
+                        <h2 class="caption">A building</h2>
+                        <p class="detais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam iusto et repellendus deleniti hic
+                            corporis incidunt? Aperiam, soluta illo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse, numquam?</p>
+                        <a href="img/02.jpeg" target="_blank">Open fullscreen</a>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/03.jpeg">
+                    <div class="description">
+                        <h2 class="caption">some stuff</h2>
+                        <p class="detais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam iusto et repellendus deleniti hic
+                            corporis incidunt? Aperiam, soluta illo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse, numquam?</p>
+                        <a href="img/03.jpeg" target="_blank">Open fullscreen</a>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/04.jpeg">
+                    <div class="description">
+                        <h2 class="caption">Cool road</h2>
+                        <p class="detais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam iusto et repellendus deleniti hic
+                            corporis incidunt? Aperiam, soluta illo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse, numquam?</p>
+                        <a href="img/04.jpeg" target="_blank">Open fullscreen</a>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/05.jpeg">
+                    <div class="description">
+                        <h2 class="caption">Woody</h2>
+                        <p class="detais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam iusto et repellendus deleniti hic
+                            corporis incidunt? Aperiam, soluta illo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse, numquam?</p>
+                        <a href="img/05.jpeg" target="_blank">Open fullscreen</a>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/06.jpeg">
+                    <div class="description">
+                        <h2 class="caption">Cool sandy thingy</h2>
+                        <p class="detais">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam iusto et repellendus deleniti hic
+                            corporis incidunt? Aperiam, soluta illo? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Esse, numquam?</p>
+                        <a href="img/06.jpeg" target="_blank">Open fullscreen</a>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+
+
     </div>
 
 
