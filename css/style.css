@@ -11,6 +11,9 @@ font-family: 'Raleway', sans-serif;
 html {
     position: relative;
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    background-image: -moz-linear-gradient(135deg, #F05F57 10%, #360940 100%);
+    background-image: -webkit-linear-gradient(135deg, #F05F57 10%, #360940 100%);
+    
     /* url("../img/pine.jpeg"); */
     background-size: cover;
     background-position: center;
@@ -564,6 +567,7 @@ nav a:active {
     
 }
 
+
 .content:hover,
 .content:focus,
 .content:active {
@@ -623,6 +627,7 @@ nav a:active {
     right: 20px;
     top: 8px;
     transition: ease-out 250ms;
+    z-index: 99;
     
 }
 
