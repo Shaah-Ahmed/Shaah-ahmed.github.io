@@ -106,28 +106,28 @@ function openModal() {
     document.getElementById('myModal').style.display = "none";
   }
 
-  var slideIndex = 1;
-  showSlides(slideIndex);
+  var sliderIndex = 1;
+  showSlides(sliderIndex);
   
   function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(sliderIndex += n);
   }
   
   function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(sliderIndex = n);
   }
 
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
    
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {sliderIndex = 1}
+    if (n < 1) {sliderIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     
-    slides[slideIndex-1].style.display = "flex";
+    slides[sliderIndex-1].style.display = "flex";
     
   }
 

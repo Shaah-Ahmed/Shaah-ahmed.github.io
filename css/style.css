@@ -888,3 +888,46 @@ nav a:active {
         padding-right: 0;
     }
 }
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    font-size: 2.3em;
+  
+    margin-bottom: 1em;
+}
+
+.social > * {
+    margin-left: .5em;
+    margin-right: .5em;
+    color: white;
+    transition: ease 250ms;
+    cursor: pointer;
+}
+
+.social > *:hover,
+.social > *:focus,
+.social > *:active {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.644);
+}
+
+.footer-info {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.footer-info span {
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
