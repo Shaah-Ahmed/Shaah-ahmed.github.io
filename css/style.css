@@ -325,6 +325,7 @@ nav a:active {
     border-radius: 100%;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
+    transition: ease-in-out 350ms;
 }
 
 #paint-brush {
@@ -335,6 +336,7 @@ nav a:active {
     border-radius: 100%;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
+    transition: ease-in-out 350ms;
 }
 
 #handshake {
@@ -345,7 +347,9 @@ nav a:active {
     border-radius: 100%;
     -webkit-box-shadow: 0px 0px 11px 0px #00000041;
     box-shadow: 0px 0px 11px 0px #0000003d;
+    transition: ease-in-out 350ms;
 }
+
 
 .section-header {
     font-family: 'Raleway', sans-serif;
@@ -413,6 +417,12 @@ nav a:active {
     -webkit-box-shadow: -6px 13px 67px 8px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -6px 13px 67px 8px rgba(0, 0, 0, 0.75);
     box-shadow: -6px 13px 67px 8px rgba(0, 0, 0, 0.75);
+    transition: ease-in-out 350ms;
+}
+
+.comment-box img:hover,
+.comment-box img:focus {
+    transform: scale(1.05);
 }
 
 .comment-section {
