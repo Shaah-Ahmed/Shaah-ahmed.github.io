@@ -879,7 +879,7 @@ nav a:active {
 }
 
 .form-content form button:hover,
-.form-content form button:focus{
+.form-content form button:active{
     background: white;
     color: coral;
     outline: 0;
@@ -907,6 +907,17 @@ nav a:active {
         padding-right: 0;
     }
 }
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    margin-bottom: 20px;
+    display: none;
+}
+
+
+/* Footer=============================== */
 
 .footer {
     width: 100%;

@@ -227,23 +227,24 @@
     <div class="contact-container">
         <div class="contact-wrapper">
             <h2 class="contact-header">Contact Us</h2>
+            <div class="alert">Your message has been sent</div>
             <div class="form-content">
-                <form action="">
+                <form id="contactForm">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="email">
+                        <input type="text" name="name" id="name" required>
                     </p>
                     <p>
                         <label>Email</label>
-                        <input type="text" name="email">
+                        <input type="text" name="email" id="email" required>
                     </p>
                     <p>
                         <label>Phone</label>
-                        <input type="text" name="phone">
+                        <input type="text" name="phone" id="phone">
                     </p>
                     <p class="full">
                         <label>Message</label>
-                        <Textarea name="message" rows="5"></Textarea>
+                        <Textarea name="message" rows="5" id="message" required></Textarea>
                     </p>
                     <p class="full">
                         <button type="submit">Submit</button>
@@ -274,6 +275,7 @@
 
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
 <script src="./js/noframework.waypoints.min.js"></script>
 <script src="./js/main.js"></script>
 
