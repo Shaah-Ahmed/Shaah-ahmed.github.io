@@ -1,5 +1,3 @@
-// Function to add class after page load - I love kittypie <3
-// window.onload = function animate() {
 
 
 var x = document.getElementsByClassName("hero");
